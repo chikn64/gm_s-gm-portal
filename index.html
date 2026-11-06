@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GM Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">G</div>
+          <div>
+            <p class="eyebrow">Game portal</p>
+            <h1>GM Portal</h1>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="#games">Games</a>
+          <a href="#about">About</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow accent">Ready to play?</p>
+            <h2>Fresh arcade fun for every mood.</h2>
+            <p>
+              Jump into a quick match, challenge a friend, or test your reflexes with a few
+              classic browser games built right into the portal.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-btn" href="#games">Browse games</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="status-pill">Live</div>
+            <ul>
+              <li>3 quick-play games</li>
+              <li>Instant browser access</li>
+              <li>Built for desktop and mobile</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="games" class="games-panel">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow accent">Collection</p>
+              <h3>Featured games</h3>
+            </div>
+          </div>
+          <div id="game-grid" class="game-grid" aria-live="polite"></div>
+        </section>
+
+        <section id="about" class="about-panel">
+          <div>
+            <p class="eyebrow accent">About</p>
+            <h3>Built for quick, easy play</h3>
+          </div>
+          <p>
+            GM Portal brings together a few lightweight games designed to feel fast, colorful,
+            and fun without requiring any installation or setup.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
